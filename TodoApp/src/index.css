@@ -1,0 +1,128 @@
+
+
+
+  *{
+  margin: 0;
+  overflow: auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html,body{
+ 
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+} 
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.wrapper{
+  
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  max-width: 1200px;
+  height: auto;
+  margin: 30px auto;
+  
+}
+
+h1{
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.911);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.form-and-todo-box{
+  
+  width: 500px;
+  margin-top: 50px;
+  height: auto;
+}
+
+.form-and-todo-box .input-and-button{
+  height: 45px;
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.form-and-todo-box .input-and-button input{
+  width: 92%;
+  height: 100%;
+  outline: none;
+  border: none;
+  text-indent: 2px;
+  font-size: 16px;
+  padding: 5px;
+  /* border: 2px solid #f92c0f; */
+}
+
+.form-and-todo-box .input-and-button .button{
+  width: 8%;
+  height: 100%;
+  background-color: #f92c0f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.form-and-todo-box .input-and-button .button.edit{
+  width: auto;
+  padding: 0px 10px;
+}
+
+.form-and-todo-box .input-and-button .button button{
+  outline: none;
+  cursor: pointer;
+  border: 2px solid #f92c0f;
+  background-color: transparent;
+  color: #fff;
+}
+
+.todo{
+  margin: 15px 0px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid;
+  padding-bottom: 5px;
+}
+
+.todo input{
+  margin-right: 5px;
+}
+
+.todo span{
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.todo .edit-and-delete{
+  display: flex;
+  cursor: pointer;
+}
+
+.delete-all{
+  padding: 10px;
+  cursor: pointer;
+}
